@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hola Mundo K8s</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        margin: 0;
+        padding: 50px;
+      }
+      .container {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+      }
+      h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>¡Hola Mundo desde Kubernetes!</h1>
+      <p>Tu cluster esta funcionando correctamente</p>
+      <p>Servidor: <span id="hostname">Cargando...</span></p>
+    </div>
+
+    <script>
+      document.getElementById("hostname").textContent =
+        window.location.hostname;
+    </script>
+  </body>
+</html>
